@@ -2,7 +2,7 @@
 
 ## Provider
 Provider is a Dart library used for dependency injection (DI) and state management.
-Provider itself is a widget. You wrap the app around with it.
+Provider itself is a widget. You wrap the app around with it. </br>
 Provider.of<Flavor>(context) enables us to access data from the top of the widget tree (Provider widget is at the top).
 Separate flavors mean something like 'separate branches of the app (?)'. Example names of the flavors are "development, production, staging, demo". This makes testing easier, makes sure you deploy the correct version of the app etc. Different flavors enable to test different backend environments (what does it mean exactly?). For example a flavor can be used as a developer testing app with options for testing.
 App flavors are defined in the app.gradle file for Android.
@@ -36,8 +36,8 @@ The pattern name stand for Business, Logic and Components. It's architecture goa
 In simple terms, Events come in, States come out.
 ![BLoC data flow](https://miro.medium.com/max/700/1*MqYPYKdNBiID0mZ-zyE-mA.png)
 
-In the BLoC pattern some terms are heavily used, they are:
-**State** is the data your app is currently displaying
-**Event** is any action detected by an app (eg clicking a button)
-**Stream** is a "pipe" that enables data flow/transfer
-**Sink** is a point that acts as a receiver of the data
+In the BLoC pattern some terms are heavily used, they are: </br>
+**State** is the data your app is currently displaying </br>
+**Event** is any action detected by an app (eg clicking a button) </br>
+**Stream** is a "pipe" that enables data flow/transfer </br>
+**Sink** is a point that acts as a receiver of the data 
