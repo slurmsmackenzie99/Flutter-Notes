@@ -1,9 +1,11 @@
 # Flutter notes
 
 ## Provider
+One of the main goals of using Provider: **make rebuilding widgets more intentional/faster** </br>
 Provider is a Dart library used for dependency injection (DI) and state management.
 Provider itself is a widget. You wrap the app around with it. </br>
-Provider.of<Flavor>(context) enables us to access data from the top of the widget tree (Provider widget is at the top).
+Provider.of<Flavor>(context) enables us to access data from the top of the widget tree (Provider widget is at the top of the widgets that need access to it).
+Provider.of<T> does two things: retrieves the value/object that we ask for and registers current widget as the listener (context identifies the listener)
 Separate flavors mean something like 'separate branches of the app (?)'. Example names of the flavors are "development, production, staging, demo". This makes testing easier, makes sure you deploy the correct version of the app etc. Different flavors enable to test different backend environments (what does it mean exactly?). For example a flavor can be used as a developer testing app with options for testing.
 App flavors are defined in the app.gradle file for Android.
 
